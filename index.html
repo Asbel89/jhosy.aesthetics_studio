@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jhosy Aesthetics Studio — Estética Avançada para Homens e Mulheres | Mooca SP</title>
+<meta name="description" content="Jhosy Aesthetics Studio na Mooca – SP. Harmonização de glúteos, toxina botulínica, enzimas, limpeza de pele, redução de papada, harmonização íntima masculina e tratamento de estrias. Para homens e mulheres. Agende sua avaliação." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/perfil.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{
+  --bg:#F6F7F8;
+  --bg2:#EDEFF1;
+  --dark:#16191D;
+  --dark2:#22272E;
+  --muted:#667085;
+  --line:#E2E6EA;
+  --accent:#9A7B4F;
+  --accent-dark:#7A613C;
+  --green:#1F3D2B;
+  --card:#FFFFFF;
+  --radius:14px;
+  --shadow:0 16px 40px rgba(22,25,29,.10);
+  --max:1150px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:'Sora',sans-serif;font-weight:800;letter-spacing:-.5px;line-height:1.15}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+.topbar{background:var(--dark);color:#E8EAED;font-size:.83rem;text-align:center;padding:10px 16px}
+.topbar strong{color:#fff}
+
+header{position:sticky;top:0;z-index:50;background:rgba(246,247,248,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:var(--max);margin:0 auto;padding:0 24px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:46px;height:46px;border-radius:50%;background:var(--dark);display:grid;place-items:center;color:white;font-family:'Sora';font-weight:800;font-size:1.2rem;overflow:hidden;flex-shrink:0;border:2px solid var(--accent)}
+.logo-mark img{width:100%;height:100%;object-fit:cover}
+.logo-mark span{color:var(--accent)}
+.foot-logo{width:64px;height:64px;border-radius:50%;object-fit:cover;margin:0 auto 10px;border:2px solid var(--accent);display:block}
+.logo-text{line-height:1.1}
+.logo-text b{font-family:'Sora';font-size:1.05rem;display:block;letter-spacing:-.3px}
+.logo-text span{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:700}
+.links{display:flex;gap:26px;align-items:center;font-size:.93rem;font-weight:600}
+.links a{opacity:.8}.links a:hover{opacity:1;color:var(--accent-dark)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--dark);color:white;padding:14px 26px;border-radius:10px;font-weight:700;font-size:.94rem;border:0;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.2)}
+.btn-accent{background:var(--accent);color:white}
+.btn-accent:hover{background:var(--accent-dark)}
+.btn-outline{background:transparent;border:1.5px solid var(--dark);color:var(--dark)}
+.btn-whats{background:#16a34a;color:white}
+.hamburger{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer}
+
+/* HERO */
+.hero{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);border-bottom:1px solid var(--line)}
+.hero-grid{max-width:var(--max);margin:0 auto;padding:60px 24px 56px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:8px 14px;border-radius:100px;font-size:.8rem;font-weight:700;color:var(--dark)}
+.badge .dot{width:8px;height:8px;border-radius:50%;background:#16a34a}
+.hero h1{font-size:clamp(2.1rem,4.5vw,3.4rem);margin:18px 0 14px}
+.hero h1 span{color:var(--accent-dark)}
+.hero p.sub{font-size:1.08rem;color:var(--muted);max-width:540px}
+.hero-cta{display:flex;gap:12px;margin:26px 0 20px;flex-wrap:wrap}
+.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:10px;font-size:.9rem;color:var(--muted)}
+.trust strong{color:var(--dark)}
+.hero-img{position:relative}
+.hero-img .main{border-radius:16px;box-shadow:var(--shadow);aspect-ratio:4/4.4;object-fit:cover;width:100%}
+.hero-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.mini{background:white;border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;gap:12px;align-items:center;font-size:.88rem}
+.mini i{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:var(--dark);color:white;flex-shrink:0}
+
+/* BAR */
+.bar{background:var(--dark);color:#fff}
+.bar-inner{max-width:var(--max);margin:0 auto;padding:16px 24px;display:flex;gap:28px;justify-content:space-between;flex-wrap:wrap;font-size:.92rem;font-weight:600}
+.bar-inner span{opacity:.9}
+
+/* SECTIONS */
+section{padding:76px 0}
+.eyebrow{font-size:.76rem;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent-dark);margin-bottom:10px}
+h2.title{font-size:clamp(1.7rem,3.2vw,2.5rem);max-width:700px;margin-bottom:12px}
+p.lead{color:var(--muted);max-width:720px;font-size:1.03rem}
+
+/* AUDIENCE */
+.aud{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.aud-card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;gap:18px;align-items:flex-start}
+.aud-card .ic{width:52px;height:52px;border-radius:12px;background:var(--bg2);display:grid;place-items:center;font-size:1.4rem;flex-shrink:0}
+
+/* SOBRE */
+.sobre-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:center;margin-top:36px}
+.sobre-img{border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.sobre-img img{aspect-ratio:4/4.6;object-fit:cover;width:100%}
+.check-list{margin:22px 0;display:grid;gap:12px}
+.check-list li{list-style:none;display:flex;gap:12px;align-items:flex-start;background:white;padding:13px 15px;border-radius:12px;border:1px solid var(--line);font-size:.95rem}
+.check-list i{color:var(--accent-dark);margin-top:4px}
+
+/* PROCEDIMENTOS */
+#procedimentos{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grid-proc{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;transition:.25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow);background:white;border-color:#cfd6dd}
+.card .top{width:48px;height:48px;border-radius:12px;background:var(--dark);color:white;display:grid;place-items:center;font-size:1.2rem;margin-bottom:6px}
+.card h3{margin:12px 0 8px;font-size:1.12rem}
+.card p{font-size:.92rem;color:var(--muted);margin-bottom:16px;flex:1}
+.tag{font-size:.72rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;display:inline-block;padding:5px 10px;border-radius:100px;background:#fff;border:1px solid var(--line);color:var(--muted);margin-bottom:4px;width:fit-content}
+.tag.unisex{background:#E8F0E9;color:var(--green);border-color:#CBDCCB}
+.card a.link{font-weight:800;color:var(--dark);font-size:.9rem}
+.card a.link:hover{color:var(--accent-dark)}
+.card.dark{background:var(--dark);color:#E8EAED;border-color:var(--dark)}
+.card.dark p{color:#AEB6BF}
+
+/* METODO */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}
+.step{background:white;padding:24px 20px;border-radius:var(--radius);border:1px solid var(--line)}
+.step b.num{font-family:'Sora';font-size:.8rem;background:var(--dark);color:white;padding:6px 12px;border-radius:100px;display:inline-block;margin-bottom:12px}
+
+/* DEPO */
+.depo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}
+.depo{background:white;border-radius:var(--radius);padding:22px;border:1px solid var(--line)}
+.depo p{color:#334155;font-size:.95rem}
+.depo .who{margin-top:14px;display:flex;gap:12px;align-items:center}
+.avatar{width:42px;height:42px;border-radius:50%;background:var(--dark);display:grid;place-items:center;color:white;font-weight:800}
+.stars{color:#C99A2B;letter-spacing:2px;font-size:.85rem}
+
+/* FAQ */
+.faq{max-width:760px;margin:28px auto 0}
+.faq-item{background:white;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.faq-q{padding:17px 18px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:.96rem}
+.faq-a{padding:0 18px;max-height:0;overflow:hidden;transition:.3s;color:var(--muted);font-size:.93rem}
+.faq-item.open .faq-a{padding:0 18px 18px;max-height:300px}
+
+/* CONTATO */
+#contato{background:var(--dark);color:#E8EAED}
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;margin-top:30px}
+.info-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:18px;margin-bottom:12px;display:flex;gap:14px;font-size:.94rem}
+.info-box i{font-size:1.25rem;color:#D8C39A}
+.form{background:white;color:var(--dark);border-radius:16px;padding:26px}
+.form label{font-size:.83rem;font-weight:700;display:block;margin:14px 0 6px}
+.form input,.form select,.form textarea{width:100%;padding:12px 13px;border-radius:10px;border:1.5px solid var(--line);font-family:inherit;font-size:.94rem;background:var(--bg)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--accent)}
+
+footer{padding:26px 0 96px;text-align:center;color:var(--muted);font-size:.88rem;background:var(--bg)}
+.wfloat{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#16a34a;display:grid;place-items:center;color:white;font-size:1.6rem;box-shadow:0 12px 30px rgba(22,163,74,.4)}
+.reveal{opacity:0;transform:translateY(20px);transition:.6s}
+.reveal.visible{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .links{display:none;position:absolute;top:72px;left:0;right:0;background:white;flex-direction:column;padding:22px;gap:16px;border-bottom:1px solid var(--line)}
+  .links.open{display:flex}
+  .hamburger{display:block}
+  .hero-grid,.sobre-grid,.contato-grid,.aud{grid-template-columns:1fr}
+  .grid-proc,.depo-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  section{padding:56px 0}
+}
+@media(max-width:520px){.steps{grid-template-columns:1fr}.hero-cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><strong>Mooca – São Paulo</strong> &nbsp;|&nbsp; Atendimento para homens e mulheres &nbsp;|&nbsp; Agende sua avaliação</div>
+
+<header>
+  <nav class="nav">
+    <a href="#topo" class="logo">
+      <div class="logo-mark"><img src="assets/perfil.jpg" alt="Jhosy Aesthetics Studio" /></div>
+      <div class="logo-text"><b>JHOSY AESTHETICS</b><span>Studio • Mooca</span></div>
+    </a>
+    <div class="links" id="menu">
+      <a href="#sobre">A clínica</a>
+      <a href="#procedimentos">Procedimentos</a>
+      <a href="#metodo">Como funciona</a>
+      <a href="#depoimentos">Avaliações</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#contato" class="btn btn-accent" style="color:white">Agendar avaliação</a>
+    </div>
+    <button class="hamburger" id="hamb"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+</header>
+
+<section class="hero" id="topo" style="padding-top:0">
+  <div class="hero-grid">
+    <div>
+      <span class="badge"><span class="dot"></span> Estética avançada • Homens e mulheres</span>
+      <h1>Realce sua melhor versão com <span>naturalidade</span></h1>
+      <p class="sub">Na <strong>Jhosy Aesthetics Studio</strong>, cada atendimento é individualizado. Respeitamos seus objetivos e buscamos resultados harmônicos, sem exageros — para todos os perfis.</p>
+      <div class="hero-cta">
+        <a href="#contato" class="btn">Agendar avaliação <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://instagram.com/jhosy.aesthetics_studio" target="_blank" class="btn btn-outline"><i class="fa-brands fa-instagram"></i> Ver Instagram</a>
+      </div>
+      <div class="trust">
+        <span><strong>+500</strong> atendimentos</span>
+        <span><strong>★ 5.0</strong> avaliação média</span>
+        <span><strong>Mooca</strong> – SP</span>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img class="main" src="https://scontent-dub4-1.cdninstagram.com/v/t51.82787-15/838271527_18121325860807755_7820692222690820812_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwMDc0NTEyNDgzNDM4NjM2NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nI3Vpmhz1qMQ7kNvwF3L9-n&_nc_oc=AdqJGAKEGLcrqwpUyR16xZdeyssPn6QgGHEjMg4DpJeg7zr_DQ1SKL2AdKKyM7u1XIg&_nc_zt=23&_nc_ht=scontent-dub4-1.cdninstagram.com&_nc_gid=HvhVhKvP-EqeFwQrU7Pnbg&_nc_ss=7b6a8&oh=00_AQMMFJ7zNb4kjxlRKbzIIvvHY9P-p9yhCw7F4ao2h4W13A&oe=6AC9DC13" onerror="this.onerror=null;this.src='assets/perfil.jpg'" alt="Jhosy Aesthetics Studio — resultado real" />
+      <div class="hero-cards">
+        <div class="mini"><i class="fa-solid fa-shield-halved"></i><div><strong>Protocolo seguro</strong><br><span style="color:var(--muted)">Avaliação individual</span></div></div>
+        <div class="mini"><i class="fa-solid fa-user-check"></i><div><strong>Para todos</strong><br><span style="color:var(--muted)">Homens e mulheres</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bar"><div class="bar-inner">
+  <span><i class="fa-solid fa-check"></i> Harmonização de glúteos</span>
+  <span><i class="fa-solid fa-check"></i> Toxina botulínica</span>
+  <span><i class="fa-solid fa-check"></i> Enzimas</span>
+  <span><i class="fa-solid fa-check"></i> Limpeza de pele</span>
+  <span><i class="fa-solid fa-check"></i> Papada e estrias</span>
+</div></div>
+
+<section id="sobre">
+  <div class="container">
+    <div class="eyebrow">A clínica</div>
+    <h2 class="title">Cuidado profissional, sem padrão único de beleza</h2>
+    <p class="lead">Aqui não existe um único padrão. Existe o seu objetivo. Atendemos homens e mulheres que buscam autoestima, bem-estar e resultados naturais.</p>
+    <div class="aud">
+      <div class="aud-card reveal"><div class="ic"><i class="fa-solid fa-person-dress"></i></div><div><strong>Para mulheres</strong><br><span style="color:var(--muted);font-size:.93rem">Harmonização de glúteos, botox, limpeza de pele, enzimas, papada e estrias com foco em harmonia.</span></div></div>
+      <div class="aud-card reveal"><div class="ic"><i class="fa-solid fa-person"></i></div><div><strong>Para homens</strong><br><span style="color:var(--muted);font-size:.93rem">Harmonização íntima masculina, redução de papada, limpeza de pele, botox e gordura localizada. Atendimento discreto.</span></div></div>
+    </div>
+    <div class="sobre-grid">
+      <div class="sobre-img reveal">
+        <img src="https://scontent-dub4-1.cdninstagram.com/v/t51.82787-15/838271527_18121325860807755_7820692222690820812_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwMDc0NTEyNDgzNDM4NjM2NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nI3Vpmhz1qMQ7kNvwF3L9-n&_nc_oc=AdqJGAKEGLcrqwpUyR16xZdeyssPn6QgGHEjMg4DpJeg7zr_DQ1SKL2AdKKyM7u1XIg&_nc_zt=23&_nc_ht=scontent-dub4-1.cdninstagram.com&_nc_gid=HvhVhKvP-EqeFwQrU7Pnbg&_nc_ss=7b6a8&oh=00_AQMMFJ7zNb4kjxlRKbzIIvvHY9P-p9yhCw7F4ao2h4W13A&oe=6AC9DC13" onerror="this.onerror=null;this.src='assets/perfil.jpg'" alt="Jhosy Araujo — Jhosy Aesthetics Studio" />
+      </div>
+      <div class="reveal">
+        <h3 style="font-size:1.3rem;margin-bottom:10px">Jhosy Araujo | Estética</h3>
+        <p style="color:var(--muted)">Cuidar da autoestima também é cuidar de você. Por isso cada plano é feito de forma individualizada, com escuta, avaliação completa e acompanhamento pós-procedimento.</p>
+        <ul class="check-list">
+          <li><i class="fa-solid fa-circle-check"></i> <span><strong>Avaliação completa</strong> antes de qualquer procedimento</span></li>
+          <li><i class="fa-solid fa-circle-check"></i> <span><strong>Resultados naturais,</strong> sem exageros e sem mudar sua identidade</span></li>
+          <li><i class="fa-solid fa-circle-check"></i> <span><strong>Ambiente acolhedor</strong> e atendimento com hora marcada na Mooca</span></li>
+          <li><i class="fa-solid fa-circle-check"></i> <span><strong>Sigilo e respeito,</strong> inclusive em protocolos íntimos masculinos</span></li>
+        </ul>
+        <a href="#contato" class="btn btn-accent">Conhecer a clínica <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="procedimentos">
+  <div class="container">
+    <div class="eyebrow">Procedimentos</div>
+    <h2 class="title">Soluções para rosto e corpo</h2>
+    <p class="lead">Escolha pelo seu objetivo. Todos incluem avaliação personalizada para indicar o protocolo ideal para o seu caso.</p>
+    <div class="grid-proc">
+      <div class="card reveal"><span class="tag unisex">Corpo • Unisex</span><div class="top"><i class="fa-solid fa-ruler-combined"></i></div><h3>Harmonização de Glúteos</h3><p>Volume, contorno e firmeza com bioestímulo. Para um resultado harmônico e proporcional.</p><a class="link" href="#contato" data-proc="Harmonização de Glúteos">Solicitar avaliação →</a></div>
+      <div class="card reveal"><span class="tag unisex">Rosto • Unisex</span><div class="top"><i class="fa-solid fa-syringe"></i></div><h3>Toxina Botulínica</h3><p>Suaviza rugas e linhas de expressão, previne marcas e mantém a expressão natural.</p><a class="link" href="#contato" data-proc="Botox">Solicitar avaliação →</a></div>
+      <div class="card reveal"><span class="tag unisex">Rosto • Unisex</span><div class="top"><i class="fa-solid fa-spa"></i></div><h3>Limpeza de Pele</h3><p>Renovação, controle de oleosidade e poros. Pele saudável para homens e mulheres.</p><a class="link" href="#contato" data-proc="Limpeza de Pele">Solicitar avaliação →</a></div>
+      <div class="card reveal"><span class="tag unisex">Corpo • Unisex</span><div class="top"><i class="fa-solid fa-fire"></i></div><h3>Enzimas — Gordura Localizada</h3><p>Redução de medidas em abdômen, flancos, braços e costas com protocolo associado.</p><a class="link" href="#contato" data-proc="Enzimas">Solicitar avaliação →</a></div>
+      <div class="card reveal"><span class="tag unisex">Rosto • Unisex</span><div class="top"><i class="fa-solid fa-face-smile"></i></div><h3>Redução de Papada</h3><p>Contorno mandibular mais definido e perfil mais harmonizado, sem cirurgia.</p><a class="link" href="#contato" data-proc="Redução de Papada">Solicitar avaliação →</a></div>
+      <div class="card reveal"><span class="tag">Público masculino</span><div class="top"><i class="fa-solid fa-user-shield"></i></div><h3>Harmonização Íntima Masculina</h3><p>Atendimento discreto, sigiloso e individualizado, com foco em autoestima e bem-estar.</p><a class="link" href="#contato" data-proc="Harmonização Íntima Masculina">Atendimento sigiloso →</a></div>
+      <div class="card reveal"><span class="tag unisex">Corpo • Unisex</span><div class="top"><i class="fa-solid fa-layer-group"></i></div><h3>Tratamento de Estrias</h3><p>Protocolos para estrias brancas e vermelhas, com melhora de textura e coloração.</p><a class="link" href="#contato" data-proc="Estrias">Solicitar avaliação →</a></div>
+      <div class="card dark reveal"><h3>Não sabe qual é o ideal?</h3><p>Faça uma avaliação e receba um plano personalizado para o seu objetivo e orçamento.</p><a href="#contato" class="btn btn-accent" style="margin-top:10px">Agendar avaliação</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="metodo">
+  <div class="container">
+    <div class="eyebrow">Como funciona</div>
+    <h2 class="title">Do primeiro contato ao resultado</h2>
+    <div class="steps">
+      <div class="step reveal"><b class="num">01</b><h3>Avaliação</h3><p style="color:var(--muted);font-size:.92rem">Escuta do seu objetivo e análise individual.</p></div>
+      <div class="step reveal"><b class="num">02</b><h3>Plano personalizado</h3><p style="color:var(--muted);font-size:.92rem">Protocolo sob medida para seu perfil.</p></div>
+      <div class="step reveal"><b class="num">03</b><h3>Procedimento</h3><p style="color:var(--muted);font-size:.92rem">Técnica segura em ambiente profissional.</p></div>
+      <div class="step reveal"><b class="num">04</b><h3>Acompanhamento</h3><p style="color:var(--muted);font-size:.92rem">Suporte pós para melhor evolução.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos" style="background:#fff;border-top:1px solid var(--line)">
+  <div class="container">
+    <div class="eyebrow">Avaliações</div>
+    <h2 class="title">Quem já passou pela clínica</h2>
+    <div class="depo-grid">
+      <div class="depo reveal"><span class="stars">★★★★★</span><p style="margin-top:8px">“Resultado muito natural, do jeito que eu queria. Atendimento profissional do início ao fim.”</p><div class="who"><div class="avatar">C</div><div><strong>Camila R.</strong><br><span style="font-size:.82rem;color:var(--muted)">Harmonização de glúteos</span></div></div></div>
+      <div class="depo reveal"><span class="stars">★★★★★</span><p style="margin-top:8px">“Atendimento discreto e respeitoso. Me senti à vontade e o resultado superou a expectativa.”</p><div class="who"><div class="avatar">R</div><div><strong>Rafael T.</strong><br><span style="font-size:.82rem;color:var(--muted)">Protocolo masculino</span></div></div></div>
+      <div class="depo reveal"><span class="stars">★★★★★</span><p style="margin-top:8px">“Minha pele mudou completamente. Ambiente organizado na Mooca, virei cliente fiel.”</p><div class="who"><div class="avatar">J</div><div><strong>Juliana M.</strong><br><span style="font-size:.82rem;color:var(--muted)">Limpeza de pele + Botox</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:60px">
+  <div class="container">
+    <div class="eyebrow" style="text-align:center">Dúvidas frequentes</div>
+    <h2 class="title" style="text-align:center;margin:0 auto">Perguntas e respostas</h2>
+    <div class="faq">
+      <div class="faq-item"><div class="faq-q">Vocês atendem homens e mulheres? <i class="fa-solid fa-chevron-down"></i></div><div class="faq-a">Sim. A clínica atende todos os públicos, com protocolos para rosto e corpo e atendimento individualizado para cada objetivo.</div></div>
+      <div class="faq-item"><div class="faq-q">Os resultados ficam naturais? <i class="fa-solid fa-chevron-down"></i></div><div class="faq-a">Sim. O foco é harmonia e naturalidade. Na avaliação definimos técnica, dose e volume ideais para o seu perfil, sem exageros.</div></div>
+      <div class="faq-item"><div class="faq-q">Onde fica a clínica? <i class="fa-solid fa-chevron-down"></i></div><div class="faq-a">Na Mooca – São Paulo. O endereço completo é enviado no agendamento via WhatsApp.</div></div>
+      <div class="faq-item"><div class="faq-q">Harmonização íntima masculina é sigilosa? <i class="fa-solid fa-chevron-down"></i></div><div class="faq-a">Totalmente. Atendimento discreto, individual e com total respeito à privacidade.</div></div>
+      <div class="faq-item"><div class="faq-q">Quais formas de pagamento? <i class="fa-solid fa-chevron-down"></i></div><div class="faq-a">Pix, débito e crédito. Condições de parcelamento são combinadas na avaliação.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="container">
+    <div class="eyebrow" style="color:#D8C39A">Agende sua avaliação</div>
+    <h2 class="title" style="color:white">Dê o primeiro passo</h2>
+    <p style="color:#AEB6BF;max-width:600px">Preencha e fale direto no WhatsApp. Retornamos com os horários disponíveis na Mooca.</p>
+    <div class="contato-grid">
+      <div>
+        <div class="info-box"><i class="fa-brands fa-whatsapp"></i><div><strong>WhatsApp</strong><br><span style="opacity:.75">Resposta rápida em horário comercial</span></div></div>
+        <div class="info-box"><i class="fa-brands fa-instagram"></i><div><strong>@jhosy.aesthetics_studio</strong><br><span style="opacity:.75">Acompanhe resultados e bastidores</span></div></div>
+        <div class="info-box"><i class="fa-solid fa-location-dot"></i><div><strong>Mooca – São Paulo</strong><br><span style="opacity:.75">Atendimento com hora marcada</span></div></div>
+        <a id="btnZap2" href="#" target="_blank" class="btn btn-whats" style="margin-top:12px;width:100%"><i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp</a>
+      </div>
+      <form class="form" id="leadForm">
+        <h3 style="font-size:1.25rem">Solicitar agendamento</h3>
+        <p style="font-size:.9rem;color:var(--muted)">Preencha — abre seu WhatsApp com mensagem pronta.</p>
+        <label>Seu nome</label><input id="fNome" required placeholder="Ex: Alex Silva" />
+        <label>Procedimento de interesse</label>
+        <select id="fProc">
+          <option>Harmonização de Glúteos</option>
+          <option>Toxina Botulínica</option>
+          <option>Limpeza de Pele</option>
+          <option>Enzimas para gordura localizada</option>
+          <option>Redução de Papada</option>
+          <option>Harmonização Íntima Masculina</option>
+          <option>Tratamento de Estrias</option>
+          <option>Avaliação geral</option>
+        </select>
+        <label>Mensagem (opcional)</label><textarea id="fMsg" rows="3" placeholder="Ex: Quero avaliação essa semana..."></textarea>
+        <button type="submit" class="btn" style="width:100%;margin-top:18px">Enviar e agendar <i class="fa-brands fa-whatsapp"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <img class="foot-logo" src="assets/perfil.jpg" alt="Jhosy Aesthetics Studio" />
+    <div style="font-family:'Sora';font-weight:800;color:var(--dark)">JHOSY AESTHETICS STUDIO</div>
+    <div style="margin:6px 0">Mooca – SP • Estética avançada para homens e mulheres</div>
+    <div style="display:flex;gap:16px;justify-content:center;margin:12px 0;font-size:1.25rem">
+      <a href="https://instagram.com/jhosy.aesthetics_studio" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" id="footZap"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <small>© 2026 Jhosy Aesthetics Studio • Todos os direitos reservados</small>
+  </div>
+</footer>
+
+<a class="wfloat" id="wfloat" href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script>
+// ===== CONFIG — TROQUE AQUI SEU WHATSAPP =====
+const WHATSAPP_NUMBER = "5511999999999";
+const zapLink = (msg) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+document.getElementById('btnZap2').href = zapLink("Olá! Vim pelo site e quero agendar minha avaliação.");
+document.getElementById('wfloat').href = zapLink("Olá! Vim pelo site e quero agendar minha avaliação.");
+document.getElementById('footZap').href = zapLink("Olá! Vim pelo site e quero mais informações.");
+
+document.getElementById('hamb').onclick = () => document.getElementById('menu').classList.toggle('open');
+document.querySelectorAll('#menu a').forEach(a=>a.onclick=()=>document.getElementById('menu').classList.remove('open'));
+
+document.querySelectorAll('[data-proc]').forEach(el=>{
+  el.addEventListener('click', ()=>{
+    const v = el.getAttribute('data-proc');
+    const sel = document.getElementById('fProc');
+    [...sel.options].forEach(o=>{ if(o.text.includes(v.split(' ')[0])) sel.value=o.text });
+  });
+});
+
+document.getElementById('leadForm').addEventListener('submit', e=>{
+  e.preventDefault();
+  const nome = document.getElementById('fNome').value.trim();
+  const proc = document.getElementById('fProc').value;
+  const msg = document.getElementById('fMsg').value.trim();
+  const texto = `Olá! Sou ${nome}. Vim pelo site e quero agendar avaliação para: ${proc}.${msg ? " Obs: "+msg : ""}`;
+  window.open(zapLink(texto), "_blank");
+});
+
+const io = new IntersectionObserver(es=>es.forEach(x=>{ if(x.isIntersecting) x.target.classList.add('visible') }),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+document.querySelectorAll('.faq-item').forEach(it=>{
+  it.querySelector('.faq-q').onclick = ()=>{
+    document.querySelectorAll('.faq-item').forEach(o=>{ if(o!==it) o.classList.remove('open') });
+    it.classList.toggle('open');
+  };
+});
+</script>
+</body>
+</html>
